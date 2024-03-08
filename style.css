@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header
+{
+    background-color: rgb(42, 141, 133);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head 
+{
+    display: flex;
+    flex-direction: row;
+}
+.header 
+{
+    color:white;
+    font-size: 1.5em;
+    text-align: center;
+}
+.header .logo img
+{
+    width: 3em;
+
+}
+.head .div
+{
+    padding-top: 0.7em;
+}
+.header .nav
+{
+    float: right;
+    /* margin-right: 3em; */
+    
+}
+.header ul li 
+{
+  display: inline;
+  justify-content: space-around;
+  text-align: center;
+}
+.header ul li a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+    margin: 0 1em;
+    /* padding: 2px; */
+}
+.header ul li a:hover 
+{
+    background-color: azure;
+    color: black;
+    padding: 1em;
+    border-radius: 0.3em;
+}
+.header ul li i{
+   /* padding: 0.5em; */
+   padding: 0.4em;
+   border-radius: 0.3em;
+}
+.header ul li i:hover 
+{
+    background-color: azure;
+    color: black;
+    
+}
+.label1 i
+{
+    display: none;
+    float: right;
+}
+.main
+{
+    background-color: rgba(0,0, 0,0.55);
+    background-image: url(/StudentAttendance_project/img/main.jpg);
+    min-height: 34.1em;
+    /* margin-top: 1em; */
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+}
+.login
+{
+    background-color: rgba(255,255,255,0.45);
+    background-blend-mode:darken;
+    margin-top: 7em;
+    text-align: center;
+    padding: 3em;
+    border-radius: 0.4em;
+}
+.login input
+{
+    margin: 0.5em;
+    padding: 0.4em;
+    /* border-radius: 0.3em; */
+}
+.login input[type=text],input[type=password],input[type=button]
+{
+    width: 13em;
+    border: none;
+}
+.login input[type=button]
+{
+    background-color: rgb(78, 183, 209);
+   
+}
+.login input[type=button]:hover 
+{
+ background-color: rgb(82, 221, 82);
+ /* border-radius: 0.2em; */
+ 
+}
+.login a
+{
+    text-decoration: none;
+}
+.element 
+{
+    display: flex;
+    flex-direction: row;
+    /* padding: 1em; */
+    justify-content: center;
+    /* padding: 2em; */
+  
+}
+.element i
+{
+    margin: 1em;
+    cursor: pointer;
+    background-color: white;
+   
+}
+.element img
+{
+    width: 1.5em;
+}
+.element img:hover 
+{
+    background-color: white;
+}
+@media only screen and (max-width: 519px){
+    .header ul
+    {
+        display: none;
+    }
+    .label1 i
+    {
+        display: block;
+        /* position: fixed; */
+    }
+    #mycheck:checked~.nav
+    {
+        display: block;
+    }
+}

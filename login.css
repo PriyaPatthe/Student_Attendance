@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+.container
+{
+    /* background-color: aquamarine; */
+}
+.header
+{
+    background-color: rgb(42, 141, 133);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head 
+{
+    display: flex;
+    flex-direction: row;
+}
+.header 
+{
+    color:white;
+    font-size: 1.5em;
+    text-align: center;
+}
+.header .logo img
+{
+    width: 3em;
+
+}
+.head .div
+{
+    padding-top: 0.7em;
+}
+.header .nav
+{
+    float: right;
+    /* margin-right: 3em; */
+    
+}
+.header ul li 
+{
+  display: inline;
+  justify-content: space-around;
+  text-align: center;
+}
+.header ul li a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+    margin: 0 1em;
+    /* padding: 2px; */
+}
+.header ul li a:hover 
+{
+    background-color: azure;
+    color: black;
+    padding: 1em;
+    border-radius: 0.3em;
+}
+.header ul li i{
+   /* padding: 0.5em; */
+   padding: 0.4em;
+   border-radius: 0.3em;
+}
+.header ul li i:hover 
+{
+    background-color: azure;
+    color: black;
+    
+}
+.label1 i
+{
+    display: none;
+    float: right;
+}
+.btn
+{
+    /* display: flex; */
+    height: 6em;
+    font-weight: bold;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 2em;
+   /* border: 1px solid rgb(145, 145, 194); */
+}
+.btn h6
+{
+    padding-top: 1em;
+    color: white;
+}
+.btn .fa
+{
+    color: white;
+}
+.btn i
+{
+    
+    width: 2em;
+ 
+}
+
+.attendance 
+{  
+     /* margin: 0 auto; */
+    /* width: 85%; */
+    /* background-color: rgb(135, 211, 186); */
+    text-align: center;
+    /* margin-top: 1em; */
+    
+}
+select 
+{
+    width: 100%;
+    padding: 0.5em;
+}
+.attendanceform
+{
+    background-color: rgb(186, 214, 214);
+    /* padding-top: 1em; */
+    min-height: 20em;
+}
+@media only screen and (max-width: 519px){
+    .header ul
+    {
+        display: none;
+    }
+    .label1 i
+    {
+        display: block;
+        /* position: fixed; */
+    }
+    #mycheck:checked~.nav
+    {
+        display: block;
+    }
+}

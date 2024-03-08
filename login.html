@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/StudentAttendance_project/style.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/StudentAttendance_project/login.css">
+    <link rel="stylesheet" href="/StudentAttendance_project/attendance.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- ---------header ---------->
+        <div class="row header">
+            <!-- logo  -->
+            <div class="col-5 head" >
+             <div class="logo"><img src="/StudentAttendance_project/img/logo.png" alt=""></div>
+             <div class="div">Attendance</div>
+            </div>
+            <!-- navbar  -->
+            <div class="col-7">
+                <div class="row">
+                <input type="checkbox" id="mycheck" hidden>
+                <label for="mycheck" class="label1"> <i class="fa fa-bars"></i></label>
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">SignUp</a></li>
+                    <li><i class="fa fa-user"></i></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <!-- -----------section --------------- -->
+        <div class="row mt-4 gap-2">
+           <!-- <div class="col-1"></div> -->
+           <div class="col-3 btn btn-info offset-1"><h6>Add Course</h6> <i class="fa fa-book"></i>
+           </div>
+           <div class="col-3 btn btn-success"><h6>Add Student</h6> <i class="fa fa-users"></i></div>
+           <div class="col-3 btn btn-danger"><h6>Report</h6> <i class="fa fa-download"></i></div>
+        </div>
+        <!------------ take attendance ------- --->
+        <class class="row attendance mt-4">
+            <!-- <div class="col-2"></div> -->
+             <div class="col-10 offset-1"><h5>Take Attendance</h5></div>
+        </class>
+        <div class="row mt-3 select">
+            <div class="col-3">
+
+            </div>
+             <div class="col-3">
+            <select name="course" id="option" >
+                 <option value="Select subject">Select subject</option>
+                 <option value=""><i class=""></i>C language</option>
+                 <option value=""><i class=""></i>CPP</option>
+                <option value=""><i class=""></i>Java</option>
+              </select>
+             </div>
+             <div class="col-3">
+                <select name="course" id="option" >
+                    <option value="Select subject">Select Batch</option>
+                    <option value="">May 2023</option>
+                    <option value="">June 2023</option>
+                    <option value="">July2023</option>
+                  </select>
+             </div>
+        </div>
+        <!-- attendancelist  -->
+        <div class="row mt-3 attendanceform pt-3">
+           <div class="col-1"></div>
+           <div class="col-md-7">
+            <form id="attendanceForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" required>
+                <input type="submit" value="Mark Attendance">
+            </form>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Student Name</th>
+                        <th>Status</th>
+                        <th>view</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceList">
+                    <!-- Attendance records will be dynamically added here -->
+                    <tr>
+                        <td>8/3/2024</td>
+                        <td>Priya</td>
+                        <td>present</td>
+                        <td><i class="fa fa-eye"></i></td>
+                        <td ><i class="bx bx-edit"></i></td>
+                        <td><i class="bx bxs-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td>8/3/2024</td>
+                        <td>Kiran</td>
+                        <td>present</td>
+                        <td><i class="fa fa-eye"></i></td>
+                        <td ><i class="bx bx-edit""></i></td>
+                        <td><i class="bx bxs-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td>8/3/2024</td>
+                        <td>Karan</td>
+                        <td>Absent</td>
+                        <td><i class="fa fa-eye"></i></td>
+                        <td ><i class="bx bx-edit"></i></td>
+                        <td><i class="bx bxs-trash"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+           </div>
+           <div class="col-md-2  btns">
+            <div class="row btn btn-info">Total:3</div><br>
+            <div class="row btn btn-success">Present:2</div><br>
+            <div class="row btn btn-danger">Absent:1</div>
+           </div>
+           <div class="col-1"></div>
+        </div>
+        </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+<script src="/StudentAttendance_project/attendance.js"></script>
+<!-- <script></script> -->
+</body>
+</html>
